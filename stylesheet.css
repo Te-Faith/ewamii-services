@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media only screen and (orientation: portrait) and (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+    .open{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 37px;
+        height: 37px;
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .others ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .others ul li{
+        list-style-type: none;
+    }
+    .others ul li a{
+        color: white;
+        text-decoration: none;
+        gap: 10px;
+    }
+    #close{
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* the container */
+    .mainContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* padding: 0 10px; */
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* border: 2px solid black; */
+        margin: 5px;
+    }
+    .othersDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+        background-color: #e0d3d3;
+        padding: 10px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        width: 150px;
+        height: 30px;
+        border-radius: 35px;
+        border: 2px solid white;
+        outline: 2px solid black;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 100%;
+        /* height: 300px; */
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        text-align-last: center;
+        font-size: 20px;
+    }
+
+    .footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .signifier{
+        display: flex;
+        justify-content: center;
+    }
+    .categories ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories ul li{
+        list-style-type: none;
+        padding: 5px 0 5px 5px;
+        /* border: 2px solid black; */
+        width: 150px;
+    }
+    .categories ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .womenIn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        height: 40px;
+    }
+
+    .backToTop{
+        width: 25px;
+        height: 30px;
+        background-color: black;
+        position: fixed;
+        bottom: 20px;
+        right: 5px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+    }
+    .backToTop a{
+        color: white;
+        text-decoration: none;
+    }
+    .aboutUs p{
+        padding: 5px;
+        text-align-last: left;
+
+    }
+
+    form{
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    input{
+        width: 80%;
+        height: 35px;
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 5px;
+    }
+    textarea{
+        height: 120px;
+        width: 80%;
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 10px 10px;
+    }
+    
+    
+    
+}
+
+
+@media only screen and (min-width: 481px){
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+    .open{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 37px;
+        height: 37px;
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .others{
+        display: flex;
+    }
+    .others ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .others ul li{
+        list-style-type: none;
+    }
+    .others ul li a{
+        color: white;
+        text-decoration: none;
+        gap: 10px;
+    }
+    #close{
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* the container */
+    .mainContainer{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 50fr 50fr;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; */
+        /* padding: 0 10px; */
+    }
+
+    .container{
+        margin: 0;
+        /* max-width: 500px;
+        max-width: 300px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* border: 2px solid black; */
+        margin: 5px;
+    }
+    .othersDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+        background-color: #e0d3d3;
+        padding: 10px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        width: 150px;
+        height: 30px;
+        border-radius: 35px;
+        border: 2px solid white;
+        outline: 2px solid black;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 100%;
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        text-align-last: center;
+        font-size: 20px;
+    }
+
+    .footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .signifier{
+        display: flex;
+        justify-content: center;
+    }
+    .categories ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories ul li{
+        list-style-type: none;
+        padding: 5px 0 5px 5px;
+        /* border: 2px solid black; */
+        width: 150px;
+    }
+    .categories ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .womenIn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        height: 40px;
+    }
+
+    .backToTop{
+        width: 25px;
+        height: 30px;
+        background-color: black;
+        position: fixed;
+        bottom: 20px;
+        right: 5px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+    }
+    .backToTop a{
+        color: white;
+        text-decoration: none;
+    }
+    .aboutUs p{
+        padding: 5px;
+        text-align-last: left;
+
+    }
+
+    form{
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    input{
+        width: 80%;
+        height: 35px;
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 5px;
+    }
+    textarea{
+        height: 120px;
+        width: 80%;
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 10px 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
